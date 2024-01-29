@@ -6,9 +6,9 @@ dotenv.config();
 const app = express();
 
 app.get('/',(req,res)=> {
-    res.send("API is running sucessfully");
+    res.send("API is RUNNING sucessfully");
 });
-
+ 
 app.get('/api/chat',(req, res)=> {
     res.send(chats);
 });
