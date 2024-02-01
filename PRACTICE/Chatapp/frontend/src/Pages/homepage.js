@@ -25,7 +25,22 @@ const HomePage = () => {
           Talk-A-Tive
         </Text>
       </Box>
-      <Box w="100%" p={4} borderRadius="lg" borderWidth="1px"></Box>
+      <Box w="100%" p={4} borderRadius="lg" borderWidth="1px" color="white">
+        <Tabs variant="soft-rounded">
+          <TabList>
+            <Tab width="50%">Login</Tab>
+            <Tab width="50%">SignUp</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <p>one!</p>
+            </TabPanel>
+            <TabPanel>
+              <p>two!</p>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
     </Container>
   );
 };
