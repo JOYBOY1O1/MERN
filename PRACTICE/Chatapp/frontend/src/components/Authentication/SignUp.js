@@ -9,6 +9,8 @@ const SignUp = () => {
   const [pic, setPic] = useState();
 
   return (
+    // main part to be added
+
     <VStack spacing="5px" color={"white"}>
       <FormControl id="first-name" isRequired>
         <FormLabel></FormLabel>
