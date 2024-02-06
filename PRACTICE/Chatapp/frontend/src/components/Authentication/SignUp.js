@@ -18,7 +18,6 @@ const SignUp = () => {
         />
       </FormControl>
     </VStack>
-    <updates></updates>
   );
 };
 
