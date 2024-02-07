@@ -1,5 +1,11 @@
-import { FormControl, FormLabel, VStack } from "@chakra-ui/react";
-import React from "react";
+import { Button } from "@chakra-ui/button";
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
+import { VStack } from "@chakra-ui/layout";
+import { useToast } from "@chakra-ui/toast";
+import axios from "axios";
+import { useState } from "react";
+import { useHistory } from "react-router";
 
 const SignUp = () => {
   const [name, setName] = useState();
@@ -11,7 +17,7 @@ const SignUp = () => {
   return (
     <VStack spacing="5px" color={"white"}>
       <FormControl id="first-name" isRequired>
-        <FormLabel></FormLabel>
+        <FormLabel>Name</FormLabel>
         <Input
           placeholder="Enter your Name"
           onchange={(e) => setName(e.target.value)}
