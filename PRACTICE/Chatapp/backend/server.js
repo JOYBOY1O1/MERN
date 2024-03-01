@@ -4,7 +4,8 @@ const { chats } = require("./data/data");
 const { connect } = require("mongoose");
 const connectDB = require("./config/db");
 const colors = require("colors");
-const userRoutes = require(".routes/userRoutes");
+const userRoutes = require("./routes/userRoutes");
+
 dotenv.config();
 connectDB();
 const app = express();
