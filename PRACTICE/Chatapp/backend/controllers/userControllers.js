@@ -1,5 +1,6 @@
 const asyncHandler = require("express-aysnc-Handler");
 const generateToken = require("../config/generateToken");
+
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password, pic } = req.body;
   if (!name || !email || !password) {
