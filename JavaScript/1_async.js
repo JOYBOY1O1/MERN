@@ -1,16 +1,19 @@
-const dummy_data = [
-  { name: "Aman", Profession: "Software Engineer" },
-  { name: "Anuj", Profession: "Software Engineer" },
-];
-
-function get_data() {
-  setTimeout(() => {
-    let op = "";
-    dummy_data.forEach((data, index) => {
-      op += `<li>${data.name}</li>`;
-    });
-    document.body.innerHTML = op;
-  }, 1000);
+async function wet() {
+  let delhi_wet = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("27 Degrees");
+    }, 1000);
+  });
+  let mumbai_wet = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("20 Degrees");
+    }, 7000);
+  });
+  let delhiw = await delhi_wet;
+  let mumbaiw = await mumbai_wet;
+  return [delhiw, mumbaiw];
 }
 
-get_data();
+console.log("Weather Check");
+let a = wet();
+console.log(a);
